@@ -1,0 +1,82 @@
+public class Moto extends Transporte implements Movimentos{
+     int volumeBagageiro;
+
+     Motor motor = new Motor();
+
+
+    public void setVolumeBagageiro(int bag){
+       if(bag>0) {
+
+           volumeBagageiro=bag;
+       }
+}
+     public int getVolumeBagageiro(){
+        return volumeBagageiro;
+     }
+     public Moto(){
+
+     }
+     public Moto(int volumeBagageiro){
+        this.volumeBagageiro=volumeBagageiro;
+     }
+     public Moto(String marca, String placa){
+        super(marca, placa);
+     }
+     public Moto(String marca, int VolumeBagageiro){
+        this.marca=marca;
+        this.volumeBagageiro=0;
+     }
+     public Moto(int volumeBagageiro, double preco, String marca){
+        super(preco, marca);
+        this.volumeBagageiro=volumeBagageiro;
+     }
+     public Moto(double preco, String marca){
+        super(preco, marca);
+     }
+     public Moto(double preco){
+        super(preco);
+     }
+
+
+
+    public void acelerar() {
+        if (motor != null) {
+            motor.setRpm(motor.getRpm() + 200);
+            System.out.println("O carro acelerou. RPM atual: " + motor.getRpm());
+        }
+    }
+
+
+    public void desacelerar() {
+        if (motor != null) {
+            motor.setRpm(motor.getRpm() - 200);
+            System.out.println("O carro desacelerou. RPM atual: " + motor.getRpm());
+        }
+
+    }
+
+
+    public void frear() {
+        System.out.println("Moto Freando");
+
+    }
+
+
+    public void virarDireita() {
+        System.out.println("Moto virando a direita");
+
+    }
+
+
+    public void virarEsquerda() {
+    System.out.println("Moto virando a esquerda");
+    }
+
+
+    public double desconto() {
+
+        return preco * 0.8;
+    }
+
+
+}
