@@ -1,4 +1,6 @@
-import java.util.Scanner;
+
+
+ import java.util.Scanner;
 public  abstract class Transporte{
   protected double preco;
   protected Motor motor;
@@ -52,6 +54,9 @@ public  abstract class Transporte{
           placa=pla;
       }
   }
+  /*public void setIdadeMinimaMotorista(int idade){
+      this.IDADEMINIMAMOTORISTA=19;
+  }*/ // não funciona pois IDADEMINIMA é statica
   public static int  getIDADEMINIMAMOTORISTA(){
       return IDADEMINIMAMOTORISTA;
   }
@@ -91,9 +96,9 @@ public  abstract class Transporte{
       motor.entradaDados();
   }
 
-
       //cada classe implementa a sua
       public abstract double desconto();
+
 
 
 }
