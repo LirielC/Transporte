@@ -1,35 +1,11 @@
 import java.util.Scanner;
 
-public class Motor extends Transporte {
-
-    public void acelerar() {
-
-    }
+public class Motor {
 
 
-    public void desacelerar() {
-
-    }
 
 
-    public void frear() {
 
-    }
-
-
-    public void virarDireita() {
-
-    }
-
-
-    public void virarEsquerda() {
-
-    }
-
-
-    public double desconto() {
-        return 0;
-    }
 
     private int potencia;
     private int rpm;
