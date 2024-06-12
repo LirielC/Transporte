@@ -44,7 +44,7 @@ import java.util.Scanner;
      int numeroPassageiros;
     int volumeMala;
 
-     Motor motor =new Motor();
+     Motor motor1 =new Motor();
 
     public void setNumeroPassageiros(int nump){
         if(nump>0){
