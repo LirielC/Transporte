@@ -88,6 +88,9 @@ public class App {
             System.out.println("Erro inesperado: " + e.getMessage());
         }
     }
+         Onibus o1 = new Onibus();
+        o1.motor1.setRpm(100);
+        o1.motor1.imprimir();
 }
 
     
