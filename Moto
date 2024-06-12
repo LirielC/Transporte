@@ -1,7 +1,7 @@
 public class Moto extends Transporte implements Movimentos{
      int volumeBagageiro;
 
-     Motor motor = new Motor();
+     Motor motor1 = new Motor();
 
 
     public void setVolumeBagageiro(int bag){
