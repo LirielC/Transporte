@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Onibus extends Transporte implements Movimentos{
         int numeroPassageiros;
         boolean banheiro;
-        Motor motor = new Motor();
+        Motor motor1 = new Motor();
      public void setNumeroPassageiros(int numeroPassageiros){
         if(numeroPassageiros>0){
             this.numeroPassageiros=numeroPassageiros;
